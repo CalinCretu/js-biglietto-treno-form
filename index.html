@@ -11,9 +11,15 @@
 </head>
 
 <body>
-    <section>
+    <section class="container-fluid">
         <div>
-            <input type="text" name="km" id="km-to-travel" placeholder="Insert travel km" />
+            <div>
+                <input type="text" name="username" id="user-name" placeholder="Insert Name" />
+                <div class="error"></div>
+            </div>
+            <div>
+                <input type="text" name="km" id="km-to-travel" placeholder="Insert Km" />
+            </div>
             <div>
                 <select name="discount" id="discount">
                     <option selected value="underage">Underage</option>
@@ -25,7 +31,10 @@
                 <button id="btn-calc">Click here to find out the prices</button>
             </div>
         </div>
-        <div class="price">prezzo</div>
+        <div class="price"></div>
+    </section>
+    <section>
+
     </section>
 
     <script src="js/app.js"></script>
