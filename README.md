@@ -1,11 +1,7 @@
 # Calcolo del prezzo del biglietto del treno
 
-- Chiedere all'utente tramite input e select:
-    - numero di km da percorrere tramite input
-    - eta' del passeggero tramite select
-- Calcolare il prezzo totale del biglietto a seconda di:
-    - km da percorrere
-    - se passeggero under 18 anni
-    - se passeggero over 65 anni
-- Creare il pulsante calcola
-- Calcolare il prezzo de biglietto quando l'utente clicca sul pulsante calcola
+- Creare costanti collegate al codice html:
+    - creare costante tramite ID del pulsante
+    - creare costante tramite ID dell'input KM
+    - creare costante tramite ID dell'elemento select
+- Creare costante del prezzo base a seconda dei KM scelti:
