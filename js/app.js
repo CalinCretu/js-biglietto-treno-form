@@ -7,7 +7,6 @@ const inputDOMElement = document.getElementById('km-to-travel');
 const priceDOMElement = document.querySelector('.price');
 // - creare costante tramite ID dell'elemento select
 const selDOMElement = document.getElementById('discount');
-// - USERNAME VARIABILE:
 // Creare costante del prezzo base a seconda dei KM scelti:
 const basePrice = (inputDOMElement * 0.21);
 // Creare costante in caso di inserimento non valido:
@@ -15,14 +14,13 @@ const basePrice = (inputDOMElement * 0.21);
 const invalidInputNaN = 'Please insert a NUMBER';
 // - costante risposta nel caso di inserimento di numeri negativi
 const invalidInputNeg = 'Please insert a NUMBER GREATER THAN ZERO';
-
-
+// - Variabili username input:
+//  - creare costante tramite ID dell'input NOME
 const nameDOMElement = document.getElementById('user-name');
+//  - creare costante con messaggio da mostrare in caso di NOME errato
 const nameDOMError = document.querySelector('.error');
-const invalidInputName = 'Please insert your NAME'
-
-
-
+// - creare messaggio in caso di NOME errato
+const invalidInputName = 'Please insert your NAME';
 // Creare funzione con 'click listener':
 btnDOMElement.addEventListener('click', function () {
     // - rilevare il dato inserito dal cliente nel input
@@ -30,6 +28,7 @@ btnDOMElement.addEventListener('click', function () {
     // - calcolare il prezzo base a seconda del dato inserito dal cliente nell'input
     const basePrice = (parseFloat(inputDOMElement.value) * 0.21);
     // Validazione input utente:
+    // - risposta in caso di nome non valido
     if (nameDOMElement.value === '') {
         nameDOMError.innerHTML = invalidInputName;
         exit()
