@@ -8,10 +8,15 @@
 - Creare costante in caso di inserimento non valido:
     - costante risposta nel caso di inserimento di lettere
     - costante risposta nel caso di inserimento di numeri negativi
+- Variabili username input:
+    - creare costante tramite ID dell'input NOME
+    - creare costante con messaggio da mostrare in caso di NOME errato
+    - creare messaggio in caso di NOME errato
 - Creare funzione con 'click listener':
-- rilevare il dato inserito dal cliente nel input
-- calcolare il prezzo base a seconda del dato inserito dal cliente nell'input
+    - rilevare il dato inserito dal cliente nel input
+    - calcolare il prezzo base a seconda del dato inserito dal cliente nell'input
 - Validazione input utente:
+    - risposta in caso di nome non valido
     - risposta in caso di numero negativo
     - risposta in caso di NaN
 - Calcolare il numero validato a seconda delle variabili del selettore:
