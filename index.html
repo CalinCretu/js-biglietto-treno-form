@@ -12,32 +12,41 @@
 </head>
 
 <body>
-    <section class="container-fluid">
-        <div class="container">
-            <div>
-                <input type="text" name="username" id="user-name" placeholder="Insert Name" />
-                <div class="error"></div>
+    <header class="logo mt-2">
+        <div class="container"><img src="img/logo-trenitalia.svg" alt=""></div>
+    </header>
+
+
+
+
+    <div class="app d-flex flex-column my-5">
+        <div class="container my-5">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col d-flex justify-content-center position-relative">
+                    <input class="boxes" type="text" name="username" id="user-name" placeholder="Insert Name" />
+                    <div
+                        class="mt-4 error position-absolute top-100 start-50 translate-middle text-nowrap fs-4 fw-bold">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <input class="boxes" type=" text" name="km" id="km-to-travel" placeholder="Insert Km" />
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <select class="select" name="discount" id="discount">
+                        <option selected value="underage">Underage</option>
+                        <option value="adult">Adult</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <button class="text-nowrap btn btn-outline-success btn-lg" id="btn-calc">Click here for
+                        price</button>
+                </div>
             </div>
-            <div>
-                <input type="text" name="km" id="km-to-travel" placeholder="Insert Km" />
-            </div>
-            <div>
-                <select name="discount" id="discount">
-                    <option selected value="underage">Underage</option>
-                    <option value="adult">Adult</option>
-                    <option value="over65">Over 65</option>
-                </select>
-            </div>
-            <div>
-                <button id="btn-calc">Click here to find out the prices</button>
+            <div class="price col-12 d-flex justify-content-center mt-5 fw-bold">
             </div>
         </div>
-        <div class="price"></div>
-    </section>
-    <section>
-
-    </section>
-
+    </div>
     <script src="js/app.js"></script>
 </body>
 

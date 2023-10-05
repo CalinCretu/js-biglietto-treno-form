@@ -3,3 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    max-width: 100%;
+}
+
+
+
+.app {
+    background-color: #006C67;
+}
+
+#discount {}
+
+#btn-calc {
+    color: white;
+    background-color: #E31936;
+    border-color: #E31936;
+}
+
+.price {
+    color: white;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.boxes {
+    border: 0px;
+    padding: 5px;
+    border-radius: 999px;
+}
+
+.error {
+    color: white;
+}
+
+.select {
+    border: 0px;
+    border-radius: 999px;
+    padding: 7px;
+}

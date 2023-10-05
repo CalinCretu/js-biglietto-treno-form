@@ -58,7 +58,7 @@ btnDOMElement.addEventListener('click', function () {
                 discountedPrice = (basePrice - basePrice * 0.4);
             }
             // - stampare risultato del calcolo
-            priceDOMElement.innerHTML = discountedPrice.toFixed(2) + '&euro;';
+            priceDOMElement.innerHTML = 'ONLY' + ' ' + discountedPrice.toFixed(2) + '&euro;';
         }
     }
 })
