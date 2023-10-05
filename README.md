@@ -4,4 +4,19 @@
     - creare costante tramite ID del pulsante
     - creare costante tramite ID dell'input KM
     - creare costante tramite ID dell'elemento select
-- Creare costante del prezzo base a seconda dei KM scelti:
+- Creare costante del prezzo base a seconda dei KM scelti.
+- Creare costante in caso di inserimento non valido:
+    - costante risposta nel caso di inserimento di lettere
+    - costante risposta nel caso di inserimento di numeri negativi
+- Creare funzione con 'click listener':
+- rilevare il dato inserito dal cliente nel input
+- calcolare il prezzo base a seconda del dato inserito dal cliente nell'input
+- Validazione input utente:
+    - risposta in caso di numero negativo
+    - risposta in caso di NaN
+- Calcolare il numero validato a seconda delle variabili del selettore:
+    - nel caso in cui il numero sia valido
+    - calcolare prezzo biglietto per utente underage
+    - calcolare prezzo biglietto per utenti adulti
+    - calcolare prezzo biglietto per utenti anziani
+    - stampare risultato del calcolo

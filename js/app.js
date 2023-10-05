@@ -9,8 +9,10 @@ const priceDOMElement = document.querySelector('.price');
 const selDOMElement = document.getElementById('discount');
 // Creare costante del prezzo base a seconda dei KM scelti:
 const basePrice = (inputDOMElement * 0.21);
-// CREARE COSTANTE MESSAGGIO ERROR:
+// Creare costante in caso di inserimento non valido:
+// - costante risposta nel caso di inserimento di lettere
 const invalidInputNaN = 'Valore non valido, inserisci un NUMERO';
+// - costante risposta nel caso di inserimento di numeri negativi
 const invalidInputNeg = 'Valore non valido, inserisci un NUMERO MAGGIORE DI ZERO';
 // Creare funzione con 'click listener':
 btnDOMElement.addEventListener('click', function () {
@@ -18,28 +20,32 @@ btnDOMElement.addEventListener('click', function () {
     const km = parseFloat(inputDOMElement.value);
     // - calcolare il prezzo base a seconda del dato inserito dal cliente nell'input
     const basePrice = (parseFloat(inputDOMElement.value) * 0.21);
-    // Calcolare lo sconto applicato a seconda della scelta:
-    // - calcolare il prezzo per utenti minorenni
+    // Validazione input utente:
+    // - risposta in caso di numero negativo
     if (inputDOMElement.value < 0) {
         priceDOMElement.innerHTML = invalidInputNeg;
     }
+    // - risposta in caso di NaN
     else if (isNaN(inputDOMElement.value)) {
         priceDOMElement.innerHTML = invalidInputNaN;
     }
-
+    // Calcolare il numero validato a seconda delle variabili del selettore:
+    // - nel caso in cui il numero sia valido
     else if (!isNaN(inputDOMElement.value)) {
         {
+            // - calcolare prezzo biglietto per utente underage
             if (selDOMElement.value === 'underage') {
                 discountedPrice = (basePrice - basePrice * 0.2);
             }
-            // - calcolare il prezzo per utenti adulti
+            // - calcolare prezzo biglietto per utenti adulti
             else if (selDOMElement.value === 'adult') {
                 discountedPrice = basePrice;
             }
-            // - calcolare il prezzo per utenti anziani
+            // - calcolare prezzo biglietto per utenti anziani
             else if (selDOMElement.value === 'over65') {
                 discountedPrice = (basePrice - basePrice * 0.4);
             }
+            // - stampare risultato del calcolo
             priceDOMElement.innerHTML = discountedPrice.toFixed(2) + '&euro;';
         }
     }
