@@ -23,21 +23,24 @@ btnDOMElement.addEventListener('click', function () {
     if (inputDOMElement.value < 0) {
         priceDOMElement.innerHTML = invalidInputNeg;
     }
-    if (selDOMElement.value === 'underage') {
-        discountedPrice = (basePrice - basePrice * 0.2);
-    }
-    // - calcolare il prezzo per utenti adulti
-    else if (selDOMElement.value === 'adult') {
-        discountedPrice = basePrice;
-    }
-    // - calcolare il prezzo per utenti anziani
-    else if (selDOMElement.value === 'over65') {
-        discountedPrice = (basePrice - basePrice * 0.4);
-    }
-    if (!isNaN(inputDOMElement.value)) {
-        priceDOMElement.innerHTML = discountedPrice.toFixed(2) + '&euro;';
-    }
-    if (isNaN(inputDOMElement.value)) {
+    else if (isNaN(inputDOMElement.value)) {
         priceDOMElement.innerHTML = invalidInputNaN;
+    }
+
+    else if (!isNaN(inputDOMElement.value)) {
+        {
+            if (selDOMElement.value === 'underage') {
+                discountedPrice = (basePrice - basePrice * 0.2);
+            }
+            // - calcolare il prezzo per utenti adulti
+            else if (selDOMElement.value === 'adult') {
+                discountedPrice = basePrice;
+            }
+            // - calcolare il prezzo per utenti anziani
+            else if (selDOMElement.value === 'over65') {
+                discountedPrice = (basePrice - basePrice * 0.4);
+            }
+            priceDOMElement.innerHTML = discountedPrice.toFixed(2) + '&euro;';
+        }
     }
 })
