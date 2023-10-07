@@ -59,6 +59,7 @@ btnDOMElement.addEventListener('click', function () {
             }
             // - stampare risultato del calcolo
             priceDOMElement.innerHTML = 'ONLY' + ' ' + discountedPrice.toFixed(2) + '&euro;';
+
         }
     }
 })

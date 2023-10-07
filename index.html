@@ -12,15 +12,15 @@
 </head>
 
 <body>
-    <header class="logo mt-2">
-        <div class="container"><img src="img/logo-trenitalia.svg" alt=""></div>
+    <header class="logo-cont mt-2">
+        <div class="container logo"><img src="img/logo-trenitalia.svg" alt=""></div>
     </header>
 
 
 
 
-    <div class="app d-flex flex-column my-5">
-        <div class="container my-5">
+    <section class="app d-flex flex-column my-5">
+        <div class="container d-flex flex-column justify-content-center pt-5">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col d-flex justify-content-center position-relative">
                     <input class="boxes" type="text" name="username" id="user-name" placeholder="Insert Name" />
@@ -43,10 +43,34 @@
                         price</button>
                 </div>
             </div>
-            <div class="price col-12 d-flex justify-content-center mt-5 fw-bold">
+            <div class="d-flex justify-content-center mt-2 mb-2">
+                <div class="price fw-bold text-center">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="ticket container-fluid">
+        <div class="container-fluid ticket-cont">
+            <div class="row ticket-row justify-content-center align-items-center">
+                <div class="col-2 d-flex flex-column justify-content-center">
+                    <img src="img/logo-trenitalia.svg" alt="">
+                </div>
+                <div class="col-8 border-red-right d-flex flex-column justify-content-center">
+                    <div class="row titles">
+                        <div class="col-3 mt-5 mb-3">Passenger Name</div>
+                        <div class="col-3 mt-5 mb-3">Travel distance</div>
+                        <div class="col-3 mt-5 mb-3">Final Price</div>
+                    </div>
+                    <div class="row user-details">
+                        <div class="col-3 mt-3 mb-5 ">Passenger Name</div>
+                        <div class="col-3 mt-3 mb-5">Travel distance</div>
+                        <div class="col-3 mt-3 mb-5">Final Price</div>
+                        <div class="col-3 mt-3 mb-5"><button class="buttonino px-3 py-1">Confirm</button></div>
+                    </div>
+                </div>
+            </div>
+    </section>
     <script src="js/app.js"></script>
 </body>
 

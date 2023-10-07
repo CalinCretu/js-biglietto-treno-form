@@ -8,7 +8,9 @@ img {
     max-width: 100%;
 }
 
-
+.justify-between {
+    justify-content: space-between;
+}
 
 .app {
     background-color: #006C67;
@@ -22,10 +24,26 @@ img {
     border-color: #E31936;
 }
 
-.price {
+.buttonino {
+    border: none;
+    font-size: 30px;
+    border-radius: 50px;
+    background-color: #E31936;
     color: white;
+}
+
+.logo {
+    width: 500px;
+}
+
+.price {
+    background-color: white;
+    color: #E31936;
+    width: 400px;
     font-size: 40px;
     text-decoration: underline;
+    justify-content: center;
+    border-radius: 50px;
 }
 
 .boxes {
@@ -42,4 +60,52 @@ img {
     border: 0px;
     border-radius: 999px;
     padding: 7px;
+}
+
+
+.ticket {
+    height: 50vh;
+    font-size: 20px;
+}
+
+.col-8 {
+    background-color: #006C67;
+    border-radius: 25px;
+}
+
+.titles {
+    color: white;
+    font-size: 25px;
+}
+
+.user-details {
+    color: white;
+}
+
+.border-red-right {
+    border-top: 4px solid #E31936;
+    border-right: 4px solid #E31936;
+    border-bottom: 4px solid #E31936;
+    border-left: 4px dashed #E31936;
+}
+
+.col-2 {
+    border-top: 4px solid #E31936;
+    border-left: 4px solid #E31936;
+    border-bottom: 4px solid #E31936;
+    border-radius: 25px;
+    padding: 76px 20px;
+}
+
+.col-3 {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket-row {
+    padding: 40px;
+    height: 100px;
+    margin-top: 100px;
 }
