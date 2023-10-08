@@ -14,6 +14,7 @@ img {
 
 .app {
     background-color: #006C67;
+    height: 250px;
 }
 
 #discount {}
@@ -21,7 +22,7 @@ img {
 #btn-calc {
     color: white;
     background-color: #E31936;
-    border-color: #E31936;
+    border: none
 }
 
 .buttonino {
@@ -32,6 +33,14 @@ img {
     color: white;
 }
 
+.buttonino:hover,
+#btn-calc:hover {
+    background-color: greenyellow;
+    opacity: 0.6;
+    color: black;
+    transition: 1s;
+}
+
 .logo {
     width: 500px;
 }
@@ -40,7 +49,7 @@ img {
     background-color: white;
     color: #E31936;
     width: 400px;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: underline;
     justify-content: center;
     border-radius: 50px;
@@ -50,6 +59,14 @@ img {
     border: 0px;
     padding: 5px;
     border-radius: 999px;
+}
+
+.boxes:hover {
+    border: 2px solid blue
+}
+
+input {
+    padding-left: 10px;
 }
 
 .error {

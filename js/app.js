@@ -21,6 +21,7 @@ const nameDOMElement = document.getElementById('user-name');
 const nameDOMError = document.querySelector('.error');
 // - creare messaggio in caso di NOME errato
 const invalidInputName = 'Please insert your NAME';
+const invalidInputNumber = 'Please insert a NUMBER';
 // Creare funzione con 'click listener':
 btnDOMElement.addEventListener('click', function () {
     // - rilevare il dato inserito dal cliente nel input
@@ -30,11 +31,15 @@ btnDOMElement.addEventListener('click', function () {
     // Validazione input utente:
     // - risposta in caso di nome non valido
     if (nameDOMElement.value === '') {
-        nameDOMError.innerHTML = invalidInputName;
+        priceDOMElement.innerHTML = invalidInputName;
+        exit()
+    }
+    if (inputDOMElement.value === '') {
+        priceDOMElement.innerHTML = invalidInputNumber;
         exit()
     }
     // - risposta in caso di numero negativo
-    if (inputDOMElement.value < 0) {
+    else if (inputDOMElement.value < 0) {
         priceDOMElement.innerHTML = invalidInputNeg;
     }
     // - risposta in caso di NaN
@@ -59,7 +64,6 @@ btnDOMElement.addEventListener('click', function () {
             }
             // - stampare risultato del calcolo
             priceDOMElement.innerHTML = 'ONLY' + ' ' + discountedPrice.toFixed(2) + '&euro;';
-
         }
     }
 })
